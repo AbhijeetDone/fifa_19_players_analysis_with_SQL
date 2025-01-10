@@ -49,7 +49,7 @@ ORDER BY
 	COUNT(*) DESC;
 ```
 
-Q3. Average age,overall score,height and weight of players of each country
+Q3. Average age,overall score,height and weight of players of each country.
 --
 In a game like football physical strength helds vital importance. this question helps to average physical strength of the players of each nation.
 
@@ -72,7 +72,7 @@ ALTER COLUMN height INT;
 ```
 Some of the cells of data in height column gaves an error which were not possible to convert in INT.
 
---data error in hieght, have to remove those rows
+--data error in hieght, have to remove those rows.
 ```
 DELETE FROM fifa_db
 WHERE height LIKE '%2020%';
@@ -93,7 +93,7 @@ ORDER BY
 	nationality;
 ```
 
-Q4. Top 10 countries with younger age average and highest height average
+Q4. Top 10 countries with younger age average and highest height average.
 --
 On the basis of the data we pulled out in previous statement we decide to narrow down our search to find out best 10 nations in the terms of young age and height.
 
@@ -125,11 +125,11 @@ ORDER BY
 	avg_height DESC;
 ```
 
-Q5 Locate palyers who is/are youngest, highted.
+Q5. Locate palyers who is/are youngest, highted.
 --
 In this question we tried to find out who are the youngest and hieghted players are.
 
---Youngest players
+--Youngest players.
 
 To find out who are the most youngest players have to find out what the minimum age is.
 ```
@@ -151,7 +151,7 @@ WHERE
 	age=16;
 ```
 
---heighted players
+--Heighted players.
 
 To find out who are the most heighted players have to find out what the maximum height is.
 ```
@@ -172,9 +172,9 @@ FROM
 WHERE height=81;
 ```
 
-Q6 Countries Average overall score and max and min score
+Q6. Countries Average overall score and max and min score.
 --
-Shows performance scores stats of each country
+Shows performance scores stats of each country.
 
 ```
 SELECT
@@ -215,7 +215,7 @@ ORDER BY
 	nationality;
 ```
 
-Q8. Average overall score and number of palyers by speacialty
+Q8. Average overall score and number of palyers by speacialty.
 --
 Its shows overall performance score average for diffrent speacialty.
 ```
@@ -232,7 +232,7 @@ ORDER BY
 	total_players DESC;
 ```
 
-Q9. LEFT vs RIGHT foot average scores
+Q9. LEFT vs RIGHT foot average scores.
 --
 This copmares stats of Right foot player to Left foot player or the way around.
 ```
@@ -247,7 +247,7 @@ GROUP BY
 	preferred_foot;
 ```
 
-Q10. Top 10 player with most overall score
+Q10. Top 10 player with most overall score.
 --
 Among all the players who are the 10 best players based on the overall score.
 ```
@@ -283,7 +283,7 @@ ORDER BY
 	avg_hgt;
 ```
 
-Q12. Create column to categorise playes based on their overall score
+Q12. Create column to categorise playes based on their overall score.
 --
 --players having overall score greater than equal to 90 will be 'Excellent'
 
@@ -326,5 +326,5 @@ SET player_quality=CASE
 END
 ```
 
-With the solutions of these 12 questions, I here conclude my fifa_19_players_analysis_with_SQL
+With the solutions of these 12 questions, I here conclude my fifa_19_players_analysis_with_SQL.
 --
